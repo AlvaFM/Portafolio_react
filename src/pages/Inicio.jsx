@@ -1,40 +1,94 @@
 function Inicio() {
   return (
-    <div className="max-w-6xl mx-auto p-6">
+    <div className="animate-fadeBounce w-full min-h-screen relative overflow-y-auto">
 
-      {/* Foto y presentación */}
-      <section className="flex flex-col md:flex-row items-center gap-6 mb-12">
-        <img 
-          src="/ruta-a-tu-foto.jpg" 
-          alt="Foto de Álvaro Moisés" 
-          className="w-48 h-48 rounded-full object-cover shadow-lg"
+      {/* Fondo negro puro */}
+      <div className="absolute top-0 left-0 w-full h-full bg-black -z-20" />
+
+      {/* Imagen pegada a la derecha con degradado orgánico */}
+      <div className="absolute top-0 right-0 w-full md:w-1/2 h-full overflow-hidden">
+        <img
+          src="/img/perfil_inicio.jpg"
+          alt="Foto de Álvaro Moisés"
+          className="h-full w-full object-contain"
         />
-        <div>
-          <h1 className="text-4xl font-bold mb-4">Álvaro Moisés Flores Muñoz</h1>
-          <p className="text-lg text-gray-700">
-            Soy desarrollador web con pasión por crear experiencias increíbles. Me especializo en React y Tailwind CSS.
+        {/* Overlay difuminado más orgánico */}
+        <div
+          className="absolute top-0 left-0 w-full h-full"
+          style={{
+            background: 'linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.9) 100%)'
+          }}
+        />
+      </div>
+
+      {/* Información sobrepuesta */}
+      <div className="absolute top-0 left-0 w-full md:w-1/2 min-h-screen flex flex-col justify-center p-6 md:p-8 text-white z-10">
+        <section className="space-y-4">
+          <h1 className="text-4xl sm:text-5xl font-bold neon-text">
+            Álvaro Flores... (⌐■_■)
+          </h1>
+
+          <h2 className="text-lg sm:text-xl text-blue-400 font-semibold">
+            Desarrollador Web | backend
+          </h2>
+
+          <p className="leading-relaxed text-sm sm:text-base">
+            Soy un desarrollador web con pasión por crear experiencias modernas,
+            fluidas y centradas en el usuario.
           </p>
-        </div>
-      </section>
+        </section>
 
-      {/* Mensaje o descripción */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">Mensaje</h2>
-        <p className="text-gray-700 leading-relaxed">
-          Bienvenido a mi portafolio donde comparto mis proyectos y habilidades. Siempre estoy abierto a nuevos retos y colaboraciones.
-        </p>
-      </section>
+        <section className="mt-6 sm:mt-8">
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Mensaje</h2>
+          <p className="leading-relaxed text-sm sm:text-base">
+            Bienvenido a mi portafolio, donde comparto mis proyectos, habilidades y experiencia.
+          </p>
+        </section>
 
-      {/* Contactos rápidos */}
-      <section className="mb-12">
-        <h2 className="text-3xl font-semibold mb-4">Contactos Rápidos</h2>
-        <ul className="text-gray-700 space-y-2">
-          <li>Email: <a href="mailto:tuemail@example.com" className="text-blue-600 hover:underline">tuemail@example.com</a></li>
-          <li>LinkedIn: <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">linkedin.com/in/tuusuario</a></li>
-          <li>GitHub: <a href="https://github.com/tuusuario" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:underline">github.com/tuusuario</a></li>
-          {/* Puedes agregar más contactos como Twitter, WhatsApp, etc */}
-        </ul>
-      </section>
+        <section id="contacto" className="mt-6 sm:mt-8">
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Contactos Rápidos</h2>
+     <ul className="text-sm sm:text-base space-y-1">
+  <li>
+    📧 Email: 
+    <a href="mailto:alvaroflores.mf@gmail.com" className="text-blue-400 hover:underline">
+      alvaroflores.mf@gmail.com
+    </a>
+  </li>
+  <li>
+    💼 LinkedIn: 
+    <a href="https://linkedin.com/in/tuusuario" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+      linkedin.com/in/tuusuario
+    </a>
+  </li>
+  <li>
+    🖥 GitHub: 
+    <a href="https://github.com/AlvaFM" target="_blank" rel="noopener noreferrer" className="text-blue-400 hover:underline">
+      github.com/AlvaFM
+    </a>
+  </li>
+</ul>
+
+
+          <div className="flex justify-center mt-4">
+            <a
+              href="/cv.pdf"
+              download
+              className="px-6 py-2 sm:px-8 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105"
+            >
+              Descargar CV
+            </a>
+          </div>
+          
+              <div className="flex justify-center mt-4">
+     <div
+  style={{
+    background: 'linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.9) 100%)'
+  }}
+></div>
+
+          </div>
+        </section>
+      </div>
 
     </div>
   );

@@ -1,0 +1,31 @@
+.neon-navbar {
+  background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro semi-transparente */
+  box-shadow: 0 0 10px #db00db, 0 0 20px #ff69b4, 0 0 30px #db00db; /* Neon morado-rosa */
+  backdrop-filter: blur(10px); /* Difumina ligeramente el fondo */
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+
+.neon-link {
+  color: #0ff;
+  font-weight: bold;
+  text-shadow:
+    0 0 5px #0ff,
+    0 0 10px #0ff,
+    0 0 20px #0ff,
+    0 0 40px #0ff;
+  transition: all 0.3s ease-in-out;
+}
+
+.neon-link:hover {
+  color: #fff;
+  text-shadow:
+    0 0 10px rgb(219, 0, 223),
+    0 0 20px rgb(219, 0, 223),
+    0 0 30px rgb(219, 0, 223),
+    0 0 50px rgb(219, 0, 223);
+  transform: scale(1.1);
+}

@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+body {
+  @apply font-sans;
+}
+
+body, #root {
+  background-color: #000000;
+}
+
+
+/* neon morado-rosa */
+.neon-text {
+  color: #ffffff; /* color base morado */
+  text-shadow:
+    0 0 5px #da70d6,
+    0 0 10px #ff69b4, /* rosa brillante */
+
+
+    0 0 30px #da70d6;
+  font-weight: bold;
+}
+
+@keyframes scaleUp {
+  0% { transform: scale(0.5); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+.animate-scaleUp {
+  animation: scaleUp 0.3s ease-out forwards;
+}
+
+/* Neon sutil para las tarjetas */
+
+
+/* Neon para las imágenes */
+.proyecto-img-neon {
+  box-shadow: 0 0 5px #ff69b4, 0 0 10px #da70d6;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+.proyecto-img-neon:hover {
+  box-shadow: 0 0 10px #ff69b4, 0 0 20px #da70d6;
+  transform: scale(1.05);
+}
+
+@keyframes fadeBounce {
+  0%   { opacity: 0; transform: translateY(-20px); }
+  50%  { opacity: 0.7; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeBounce {
+  animation: fadeBounce 0.6s ease-out forwards;
+}
+
+
+
+
+
+
