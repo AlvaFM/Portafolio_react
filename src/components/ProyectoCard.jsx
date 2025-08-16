@@ -32,7 +32,8 @@ function ProyectoCard({ titulo, descripcion, repo, imagenes = [] }) {
             style={{ zIndex: 10 - idx, marginLeft: idx === 0 ? 0 : -16 }}
           >
             <img
-              src={process.env.PUBLIC_URL + img}
+              src={`${process.env.PUBLIC_URL}${img}`}
+
 
               alt={`${titulo} imagen ${idx + 1}`}
               className="proyecto-img-neon w-full h-full object-cover rounded-lg"
