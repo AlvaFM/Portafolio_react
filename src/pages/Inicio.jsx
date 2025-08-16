@@ -1,3 +1,5 @@
+import perfil from './assets/perfil_inicio.jpg';
+
 function Inicio() {
   return (
     <div className="animate-fadeBounce w-full min-h-screen relative overflow-y-auto">
@@ -8,7 +10,7 @@ function Inicio() {
       {/* Imagen pegada a la derecha con degradado orgánico */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full overflow-hidden">
         <img
-          src="/img/perfil_inicio.jpg"
+          src={perfil}
           alt="Foto de Álvaro Moisés"
           className="h-full w-full object-contain"
         />

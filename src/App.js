@@ -2,13 +2,13 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Inicio from './pages/Inicio';
 import Proyectos from './pages/Proyectos';
-import Aboutme from './pages/Aboutme';
+import Aboutme from './pages/Aboutme'; // asegúrate que el nombre coincida con el archivo
 import './App.css';
 
 function App() {
   return (
     <div className="min-h-screen flex flex-col">
-      <BrowserRouter>
+      <BrowserRouter basename="/Portafolio_react">
         <main className="flex-grow">
           <div className="min-h-screen">
             <Routes>
@@ -18,7 +18,7 @@ function App() {
             </Routes>
           </div>
         </main>
-        {/* Navbar ahora funciona como footer */}
+        {/* Navbar como footer */}
         <Navbar />
       </BrowserRouter>
     </div>
