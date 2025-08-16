@@ -16,7 +16,7 @@ function ProyectoCard({ titulo, descripcion, repo, imagenes = [] }) {
             href={repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-3 py-2 sm:px-4 sm:py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-500 transition transform hover:scale-105 text-sm sm:text-base"
+            className="proyecto-img-neon px-3 py-2 sm:px-4 sm:py-2 bg-gradient-to-r from-purple-500 to-pink-500 text-white rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-500 transition transform hover:scale-105 text-sm sm:text-base"
           >
             Ver Repositorio
           </a>

@@ -28,9 +28,10 @@ function Inicio() {
             Álvaro Flores... (⌐■_■)
           </h1>
 
-          <h2 className="text-lg sm:text-xl text-blue-400 font-semibold">
-            Desarrollador Web | backend
-          </h2>
+         <h2 className="text-lg sm:text-xl text-blue-400 font-semibold">
+  Desarrollador Web | Backend & Frontend
+</h2>
+
 
           <p className="leading-relaxed text-sm sm:text-base">
             Soy un desarrollador web con pasión por crear experiencias modernas,
@@ -39,7 +40,7 @@ function Inicio() {
         </section>
 
         <section className="mt-6 sm:mt-8">
-          <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Mensaje</h2>
+          <h2 className="text-2xl sm:text-3xl font-semibold mb-2">Saludos</h2>
           <p className="leading-relaxed text-sm sm:text-base">
             Bienvenido a mi portafolio, donde comparto mis proyectos, habilidades y experiencia.
           </p>
@@ -73,7 +74,7 @@ function Inicio() {
             <a
               href="/cv.pdf"
               download
-              className="px-6 py-2 sm:px-8 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105"
+              className="proyecto-img-neon px-6 py-2 sm:px-8 sm:py-3 bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold rounded-lg shadow-lg hover:from-pink-500 hover:to-purple-500 transition-all duration-300 transform hover:scale-105"
             >
               Descargar CV
             </a>
