@@ -1,4 +1,6 @@
-import perfil from './assets/perfil_inicio.jpg';
+// En Inicio.jsx o donde uses la imagen
+import perfil from '../assets/perfil_inicio.jpg';
+
 
 function Inicio() {
   return (
@@ -9,11 +11,12 @@ function Inicio() {
 
       {/* Imagen pegada a la derecha con degradado orgánico */}
       <div className="absolute top-0 right-0 w-full md:w-1/2 h-full overflow-hidden">
-        <img
-          src={perfil}
-          alt="Foto de Álvaro Moisés"
-          className="h-full w-full object-contain"
-        />
+      <img
+  src={perfil}
+  alt="Foto de Álvaro Moisés"
+  className="h-full w-full object-contain"
+/>
+
         {/* Overlay difuminado más orgánico */}
         <div
           className="absolute top-0 left-0 w-full h-full"
