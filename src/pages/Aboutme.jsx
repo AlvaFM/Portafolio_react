@@ -18,9 +18,9 @@ En mis años de estudio he conformado un equipo llamado “Dino Equipo”, donde
 Me apasiona crear soluciones intuitivas y seguras, enfocadas en brindar una experiencia fácil para el usuario. Actualmente, estoy profundizando mis conocimientos en Machine Learning, combinando la programación con el análisis de datos, y explorando cómo estos campos pueden integrarse para desarrollar sistemas inteligentes y eficientes.
           </p>
 
-          <h5 className="text-4xl md:text-2xl neon-text font-bold">
-            Habilidades
-          </h5>
+          <h2 className="text-lg sm:text-xl text-blue-400 font-semibold">
+Habilidades
+</h2>
           <p className="leading-relaxed text-sm md:text-base">
             Me destaco por liderazgo y creatividad, cumplo con los plazos, priorizo resolver problemas antes de explicarlos y aprendo rápido nuevas herramientas y tecnologías.
           </p>
@@ -36,16 +36,19 @@ Me apasiona crear soluciones intuitivas y seguras, enfocadas en brindar una expe
             background: 'linear-gradient(to left, rgba(0,0,0,0), rgba(0,0,0,0.9) 80%)',
           }}
         />
-        {/* Contenido de habilidades encima del difuminado */}
+      
         <div className="space-y-4 max-w-md relative z-10">
           <h5 className="text-4xl md:text-5xl neon-text font-bold">
-            Stack Web
+            Nivel de dominio
           </h5>
 
-          <SkillBar nombre="React" porcentaje={80} color="azul" />
-          <SkillBar nombre="JavaScript" porcentaje={90} color="verde" />
-          <SkillBar nombre="Tailwind" porcentaje={75} color="rosa" />
-          <SkillBar nombre="Node.js" porcentaje={70} color="morado" />
+          <SkillBar nombre="Python" porcentaje={40} color="azul" />
+          <SkillBar nombre="JavaScript" porcentaje={30} color="amarillo" />
+          <SkillBar nombre="MySQL" porcentaje={75} color="rosa" />
+          <SkillBar nombre="Node.js" porcentaje={30} color="morado" />
+          <SkillBar nombre="React" porcentaje={30} color="azul" />
+          <SkillBar nombre="Typescript" porcentaje={50} color="verde" />
+          <SkillBar nombre="Java" porcentaje={75} color="naranja" />
         </div>
       </div>
 

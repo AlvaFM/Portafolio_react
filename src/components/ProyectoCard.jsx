@@ -23,7 +23,6 @@ function ProyectoCard({ titulo, descripcion, repo, imagenes = [] }) {
         )}
       </div>
 
-      {/* Cascada de imágenes de izquierda a derecha */}
       <div className=" flex flex-row justify-start -ml-2 md:-ml-4 mt-4 md:mt-0">
         {imagenes.slice(0, 3).map((img, idx) => (
           <div
@@ -43,7 +42,6 @@ function ProyectoCard({ titulo, descripcion, repo, imagenes = [] }) {
         ))}
       </div>
 
-      {/* Vista previa */}
       <VistaPrevia
         imagen={imagenSeleccionada}
         onCerrar={() => setImagenSeleccionada(null)}

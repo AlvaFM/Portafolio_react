@@ -1,5 +1,3 @@
-import React from 'react';
-
 function VistaPrevia({ imagen, onCerrar }) {
   if (!imagen) return null;
 
@@ -10,11 +8,11 @@ function VistaPrevia({ imagen, onCerrar }) {
     >
       <div className="relative">
         <img
-          src={imagen}
+          src={`${process.env.PUBLIC_URL}${imagen}`}
           alt="Vista previa"
           className="max-w-[80vw] max-h-[80vh] rounded-lg shadow-2xl"
         />
-        {/* Botón de cerrar */}
+     
         <button
           className="absolute top-2 right-2 text-white text-2xl font-bold hover:text-red-500"
           onClick={(e) => { e.stopPropagation(); onCerrar(); }}

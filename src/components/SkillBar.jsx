@@ -5,6 +5,8 @@ const coloresNeon = {
   rosa: 'text-pink-500',
   azul: 'text-blue-500',
   verde: 'text-green-500',
+  naranja: 'text-orange-500', 
+  amarillo: 'text-yellow-500', 
 };
 
 const barrasNeon = {
@@ -12,7 +14,10 @@ const barrasNeon = {
   rosa: 'bg-pink-500 shadow-[0_0_15px_rgba(255,0,150,0.9)]',
   azul: 'bg-blue-500 shadow-[0_0_15px_rgba(0,150,255,0.9)]',
   verde: 'bg-green-500 shadow-[0_0_15px_rgba(0,255,128,0.9)]',
+  naranja: 'bg-orange-500 shadow-[0_0_15px_rgba(255,165,0,0.9)]', 
+  amarillo: 'bg-yellow-500 shadow-[0_0_15px_rgba(255,255,0,0.9)]', 
 };
+
 
 function SkillBar({ nombre, porcentaje, color = 'azul' }) {
   const colorTexto = coloresNeon[color] || coloresNeon.azul;

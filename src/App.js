@@ -2,7 +2,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Inicio from './pages/Inicio';
 import Proyectos from './pages/Proyectos';
-import Aboutme from './pages/Aboutme'; // asegúrate que el nombre coincida con el archivo
+import Aboutme from './pages/Aboutme';
+import Error404 from './pages/404notfound'; // renombrado el componente
 import './App.css';
 
 function App() {
@@ -15,10 +16,10 @@ function App() {
               <Route path="/" element={<Inicio />} />
               <Route path="/proyectos" element={<Proyectos />} />
               <Route path="/Aboutme" element={<Aboutme />} />
+              <Route path="/*" element={<Error404 />} /> 
             </Routes>
           </div>
         </main>
-        {/* Navbar como footer */}
         <Navbar />
       </BrowserRouter>
     </div>
