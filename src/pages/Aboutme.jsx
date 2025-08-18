@@ -19,8 +19,8 @@ Me apasiona crear soluciones intuitivas y seguras, enfocadas en brindar una expe
           </p>
 
           <h2 className="text-lg sm:text-xl text-blue-400 font-semibold">
-Habilidades
-</h2>
+            Habilidades
+          </h2>
           <p className="leading-relaxed text-sm md:text-base">
             Me destaco por liderazgo y creatividad, cumplo con los plazos, priorizo resolver problemas antes de explicarlos y aprendo rápido nuevas herramientas y tecnologías.
           </p>

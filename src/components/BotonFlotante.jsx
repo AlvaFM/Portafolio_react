@@ -5,7 +5,6 @@ export default function BotonFlotante({ icono, contenido, position = { bottom: '
 
   return (
     <div className="fixed z-50" style={position}>
-      {/* Botón flotante neon morado más pequeño */}
       <button
         onClick={() => setShow(!show)}
         className="bg-gradient-to-r from-pink-600 to-purple-700 text-white font-bold rounded-full w-12 h-12 flex items-center justify-center text-sm transition-all duration-300 hover:scale-105"
@@ -38,19 +37,11 @@ export default function BotonFlotante({ icono, contenido, position = { bottom: '
           >
             {contenido}
 
-            
-         <style>{`
-  div::-webkit-scrollbar {
-    width: 0px; 
-    background: transparent; 
-  }
-  div {
-    scrollbar-width: none; 
-    -ms-overflow-style: none; 
-  }
-`}</style>
-
-
+            {/* Scrollbar oculto para webkit */}
+            <style>{`
+              div::-webkit-scrollbar { width: 0px; background: transparent; }
+              div { scrollbar-width: none; -ms-overflow-style: none; }
+            `}</style>
           </div>
         </div>
       )}

@@ -1,5 +1,6 @@
 import ProyectoCard from '../components/ProyectoCard';
 
+
 function Proyectos() {
   return (
     <div className="animate-fadeBounce w-full min-h-screen relative p-4 md:p-8">
@@ -18,13 +19,61 @@ function Proyectos() {
       </h1>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-4 md:gap-8">
-        <ProyectoCard
-          className="animate-fadeSlideUp"
-          titulo="Prueba de visualizacion"
-          descripcion="Creado especialmente para visualizar  " 
-          repo="https://github.com/tuusuario/primer-proyecto"
-          imagenes={["/img/perfil_inicio.jpg","/img/perfil_inicio.jpg","/img/perfil_inicio.jpg"]}
-        />
+<ProyectoCard
+  titulo="Prueba de visualizacion"
+  descripcion="Creado especialmente para visualizar"
+  repo="https://github.com/tuusuario/primer-proyecto"
+  contenido={<p>Contenido largo para probar scroll vertical dentro del botón. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet.adaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+  </p>}
+  icono={<span>🔥</span>}
+  imagenes={[
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg"
+  ]}
+/>
+<ProyectoCard
+  titulo="Prueba de visualizacion"
+  descripcion="Creado especialmente para visualizar"
+  repo="https://github.com/tuusuario/primer-proyecto"
+  contenido={<p>Contenido largo para probar scroll vertical dentro del botón. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet.adaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+  </p>}
+  icono={<span>🔥</span>}
+  imagenes={[
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg"
+  ]}
+/>
+<ProyectoCard
+  titulo="Prueba de visualizacion"
+  descripcion="Creado especialmente para visualizar"
+  repo="https://github.com/tuusuario/primer-proyecto"
+  contenido={<p>Contenido largo para probar scroll vertical dentro del botón. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet.adaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+  </p>}
+  icono={<span>🔥</span>}
+  imagenes={[
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg"
+  ]}
+/>
+<ProyectoCard
+  titulo="Prueba de visualizacion"
+  descripcion="Creado especialmente para visualizar"
+  repo="https://github.com/tuusuario/primer-proyecto"
+  contenido={<p>Contenido largo para probar scroll vertical dentro del botón. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet.adaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+  </p>}
+  icono={<span>🔥</span>}
+  imagenes={[
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg",
+    "/img/perfil_inicio.jpg"
+  ]}
+/>
+
+
+
       </div>
 
     </div>
